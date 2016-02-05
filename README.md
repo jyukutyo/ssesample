@@ -1,7 +1,13 @@
-# ssesample
-Sample code of Server Sent Events by Spring MVC and JavaScript
+# Sample code of Server Sent Events and WebSocket by Spring MVC and JavaScript
 
-## libraries
+## Run
+Package WAR file and deploy into Servlet Container (e.g. Tomcat).
+### Server Sent Events
+/{context}/index.jsp
+### WebSocket
+/{context}/websocket.jsp
+
+## libraries (no pom.xml)
 * aopalliance-1.0.jar
 * commons-logging-1.1.3.jar
 * spring-aop-4.2.4.RELEASE.jar
