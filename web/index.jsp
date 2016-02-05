@@ -28,6 +28,13 @@
         document.getElementById('foo').innerHTML = event.data;
 
       };
+    eventSource.addEventListener("event", function(e) {
+
+        var newElement = document.createElement("div");
+        newElement.innerHTML = e.data;
+        document.getElementsByTagName("body")[0].appendChild(newElement);
+
+    }, false);
 
     }
   </script>

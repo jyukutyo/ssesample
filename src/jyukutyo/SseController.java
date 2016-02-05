@@ -13,6 +13,7 @@ public class SseController {
     @RequestMapping(path = "index")
     public SseEmitter index() throws IOException {
         sseEmitter.send("message");
+        sseEmitter.send(SseEmitter.event().data("event message").name("event"));
         return sseEmitter;
     }
 
